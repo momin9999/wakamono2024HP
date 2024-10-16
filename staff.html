@@ -17,7 +17,16 @@
     <!-- CSSの読み込み -->
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="staff.css">
-
+    <style>
+        /* 画像保護のためのCSS */
+        .member img {
+            pointer-events: none; /* マウスイベントを無効化 */
+            -webkit-user-select: none; /* Chrome/Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* IE/Edge */
+            user-select: none; /* 標準 */
+        }
+    </style>
 </head>
 <body>
     <!-- 新ヘッダー -->
@@ -224,14 +233,26 @@
 <!-- ポップアップのモーダル -->
 <div id="popup-modal" class="popup-modal" style="display: none;">
     <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <img id="popup-image" src="">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <img id="popup-image" src="" oncontextmenu="return false;"> 
         <p id="popup-text"></p>
     </div>
 </div>
 
 <!-- JavaScript -->
 <script>
+    // 右クリックを無効にする
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    }, false);
+
+    // 画像をドラッグでダウンロードすることを防ぐ
+    document.addEventListener('dragstart', function(e) {
+        if (e.target.tagName === 'IMG') {
+            e.preventDefault();
+        }
+    }, false);
+
     function openPopup(imageSrc, description) {
         document.getElementById('popup-image').src = './staffphoto/' + imageSrc;
         document.getElementById('popup-text').textContent = description;
