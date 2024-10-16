@@ -19,6 +19,21 @@
     <link rel="stylesheet" href="staff.css">
     <style>
         /* 画像保護のためのCSS */
+        .member .image-wrapper {
+            position: relative; /* オーバーレイを配置するため */
+        }
+
+        .member .image-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; /* 画像の上に配置 */
+            /* 必要に応じてポインターイベントを無効化 */
+            pointer-events: none; 
+        }
         .member img {
             pointer-events: none; /* マウスイベントを無効化 */
             -webkit-user-select: none; /* Chrome/Safari */
@@ -114,115 +129,153 @@
         <div class="committee-members">
             <!-- 各委員の情報をここに追加 -->
             <div class="member" onclick="openPopup('ERI2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/ERI1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/ERI1.jpg" alt="写真">
+                </div>
                 <h3>えりつぃん</h3>
                 <p>フェス</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('GAKU2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/GAKU1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/GAKU1.jpg" alt="写真">
+                </div>
                 <h3>がっちゃん</h3>
                 <p>総務Co.</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('HANA2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/HANA1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/HANA1.jpg" alt="写真">
+                </div>
                 <h3>はな</h3>
                 <p>フェス</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('KEN2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/KEN1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/KEN1.jpg" alt="写真">
+                </div>
                 <h3>けんけん</h3>
                 <p>合宿Co.</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('KIHO2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/KIHO1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/KIHO1.jpg" alt="写真">
+                </div>
                 <h3>きなこ</h3>
                 <p>広報Co./合宿</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('KOKI2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/KOKI1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/KOKI1.jpg" alt="写真">
+                </div>
                 <h3>やきそば</h3>
                 <p>合宿</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('KOU2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/KOU1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/KOU1.jpg" alt="写真">
+                </div>
                 <h3>こうし</h3>
                 <p>実行委員長</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('MACHI2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/MACHI1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/MACHI1.jpg" alt="写真">
+                </div>
                 <h3>まっちー</h3>
                 <p>合宿</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('MASHU2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/MASHU1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/MASHU1.jpg" alt="写真">
+                </div>
                 <h3>ましゅまろ</h3>
                 <p>合宿</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('MOYA2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/MOYA1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/MOYA1.jpg" alt="写真">
+                </div>
                 <h3>もやし</h3>
                 <p>フェス</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('NAO2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/NAO1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/NAO1.jpg" alt="写真">
+                </div>
                 <h3>なおちゃん</h3>
                 <p>フェス/総務</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('RIN2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/RIN1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/RIN1.jpg" alt="写真">
+                </div>
                 <h3>りんちゃん</h3>
                 <p>協力隊Co./合宿</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('RISA2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/RISA1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/RISA1.jpg" alt="写真">
+                </div>
                 <h3>りさこ</h3>
                 <p>フェス</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('SAKU2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/SAKU1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/SAKU1.jpg" alt="写真">
+                </div>
                 <h3>さくさん</h3>
                 <p>フェス</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('SAWA2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/SAWA1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/SAWA1.jpg" alt="写真">
+                </div>
                 <h3>すわん</h3>
                 <p>合宿</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('SORA2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/SORA1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/SORA1.jpg" alt="写真">
+                </div>
                 <h3>そら</h3>
                 <p>フェスCo.</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('SOU2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/SOU1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/SOU1.jpg" alt="写真">
+                </div>
                 <h3>のび</h3>
                 <p>合宿/総務</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('SUZU2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/SUZU1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/SUZU1.jpg" alt="写真">
+                </div>
                 <h3>すず</h3>
                 <p>フェス/協力隊</p>
             </div>
-            <!-- 他の委員の情報を追加 -->
+            <!-- 他の委員の情報 -->
             <div class="member" onclick="openPopup('TOMO2.jpg', 'プロフィールを書く')">
-                <img src="./staffphoto/TOMO1.jpg" alt="写真">
+                <div class="image-wrapper">
+                    <img src="./staffphoto/TOMO1.jpg" alt="写真">
+                </div>
                 <h3>ともき</h3>
                 <p>フェス/総務</p>
             </div>
