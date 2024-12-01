@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ラボ 2024わかもの in 九州</title>
+    <!-- Font Awesomeの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (Optional: For components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Fonts (新しいフォント) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="ticket.css">
+
+</head>
+
+<body>
+    <!-- 新ヘッダー -->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                <img src="../logo.png" class="mx-2" width="60" height="60">2024わかものin九州
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">2024わかもの in 九州</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex flex-column">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item mx-3">
+                            <a href="https://wakamono2024kyushu.com/" class="nav-link text-white text-center">
+                                <i class="fas fa-home fs-3"></i><span>ホーム</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../fes.html" class="nav-link text-white text-center">
+                                <i class="fas fa-video fs-3"></i><span>フェスティバル</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../camp.html" class="nav-link text-white text-center">
+                                <i class="fas fa-campground fs-3"></i><span>合宿</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../staff.html" class="nav-link text-white text-center">
+                                <i class="fas fa-users fs-4"></i><span>実行委員</span>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item mx-3">
+                            <a href="../letter.html" class="nav-link text-white text-center">
+                                <i class="fas fa-envelope fs-2"></i><span>憧レター</span>
+                            </a>
+                        </li> -->
+                        <li class="nav-item mx-3">
+                            <a href="./ticket/ticket.html" class="nav-link text-white text-center">
+                                <i class="fas fa-ticket fs-3"></i><span>チケット購入</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../kyushu.html" class="nav-link text-white text-center">
+                                <i class="fa-solid fa-map-location-dot fs-3"></i><span>九州</span>
+                            </a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a href="../login.html" class="nav-link text-white text-center">
+                                <i class="fas fa-user-circle fs-3"></i><span>マイページ</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- スペーサー -->
+                    <div class="flex-grow-1"></div>
+
+                    <!-- 下部に配置するナビゲーションリンク -->
+                <!-- <ul class="navbar-nav mb-3">
+                    <li class="nav-item mx-3">
+                        <a href="sponsor.html" class="nav-link text-white text-center">
+                            <i class="fas fa-handshake fs-3.25"></i><span>スポンサー</span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a href="q&a.html" class="nav-link text-white text-center">
+                            <i class="fas fa-question-circle fs-2"></i><span>  Q&A</span>
+                        </a>
+                    </li>
+                </ul> -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">2024 わかものフェスティバル</h1>
+            <h6 class="hero-subtitle">オンラインチケット購入</h6>
+            販売期間:2024年12月2日~12月31日
+        </div>
+    </section>
+
+    <section class="ticket-info py-5">
+        <h5 class="card-title">フェスティバルチケット</h5>
+        <div class="container">
+            <div class="card">
+                <p class="card-text">価格: ¥900</p>
+                <img src="../logo.png" class="card-img-top" alt="フェスチケット">
+                <div class="card-body">
+                    <a href="https://t.livepocket.jp/" target="_blank" class="instagram-btn">
+                        <i class="fab fa-ticket"></i><span>チケットを購入する</span>
+                    </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- 購入方法セクション -->
+    <section class="info py-5">
+        <div class="container">
+                <h2 class="card-title">購入方法</h2>
+                <div class="text-center mb-4">
+                    <button id="toggle-images" class="btn btn-primary">購入方法を見る　<i class="fa-solid fa-chevron-down"></i></button>
+                <div id="image-container" class="d-none">
+                    <div class="text-center">
+                        <p>まずはLive Pocket-Ticket URL:
+                            <a href="https://t.livepocket.jp/" target="_blank" class="text-primary">https://t.livepocket.jp/</a>
+                            にアクセスしてください。</p>
+                        <img src="./howtobuy/htb1.jpg" alt="購入方法1" class="img-fluid mb-3">
+                        <img src="./howtobuy/htb2.jpg" alt="購入方法2" class="img-fluid mb-3">
+                        <img src="./howtobuy/htb3.jpg" alt="購入方法3" class="img-fluid mb-3">
+                    </div>
+                    <div class="text-center mt-4">
+                        <button id="close-images" class="btn btn-danger">閉じる</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="purchase-notes py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">ー購入時の注意点ー</h2>
+            <table class="table table-bordered table-striped">
+                <thead class="table-light">
+                    <tr>
+                        <th scope="col">対象者</th>
+                        <th scope="col">購入方法</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>フェスティバルで発表するラボっ子</td>
+                        <td>
+                            発表団体代表者がまとめて発表人数分のチケットを振込。
+                            （チューター経由での購入、オンラインチケットの購入をしないようご注意ください。
+                            詳細は、発表者団体代表者の会を通じてお知らせいたします。）
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>フェスティバルで発表しないラボっ子・保護者・チューター</td>
+                        <td>
+                            所属チューターにフェスティバルチケットを購入する旨を伝え、
+                            チューター経由で購入。
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>OB・OGなどチューターを経由して購入できない方</td>
+                        <td>
+                            オンラインチケットを購入。（詳細は、
+                            2024わかものin九州のHPからご覧いただけます。）
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="text-center mt-5">ー当日販売についてー</h3>
+            <p class="mt-3">
+                前売り券が残っている場合のみ、当日販売を行う予定です。
+                <br>詳細は、2024わかものin九州のHPや各種SNSにてお伝えします。
+            </p>
+            <h3 class="text-center mt-5">ーキャンセル規定ー</h3>
+            <p class="mt-3">
+                原則として、申込後のご購入者様都合によるキャンセルの場合、チケット代金の返金は致しかねますので、ご了承願います。
+            </p>
+        </div>   
+    </section>         
+
+    <!-- JavaScript -->
+    <script>
+        const toggleButton = document.getElementById("toggle-images");
+        const closeButton = document.getElementById("close-images");
+        const imageContainer = document.getElementById("image-container");
+
+        toggleButton.addEventListener("click", () => {
+            imageContainer.classList.remove("d-none");
+            toggleButton.style.display = "none";
+        });
+
+        closeButton.addEventListener("click", () => {
+            imageContainer.classList.add("d-none");
+            toggleButton.style.display = "block";
+        });
+    </script>
+
+    </main>    
+    
+    <!-- フッター -->
+    <footer class="w-100">
+        <div class="container">
+            <p class="d-flex justify-content-center align-items-center">
+                <!-- Instagramアイコン -->
+                <a href="https://www.instagram.com/labo_wakamono?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-instagram"></i><span> Instagram</span>
+                </a>
+                <!-- LINEアイコン -->
+                <a href="https://line.me/" target="_blank" class="text-white mx-3">
+                    <i class="fab fa-line"></i><span>LINE</span>
+                </a>
+                <!-- DMアイコン (メールリンク) -->
+                <a href="mailto:wakamonokyushu2024@gmail.com" class="text-white mx-3">
+                    <i class="fas fa-envelope"></i><span>DM</span>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</body>
+</html>
